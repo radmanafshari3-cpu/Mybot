@@ -62,9 +62,7 @@ def post(message):
     if text == "":
         bot.reply_to(message, "چی بفرستم؟")
         return
-
-    bot.send_message(CHANNEL_ID, text)
-    bot.reply_to(message, "فرستادم 😎")
+        
 
 bot.send_message(CHANNEL_ID, text)
 bot.reply_to(message, "😎 فرستادم")
