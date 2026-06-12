@@ -66,4 +66,13 @@ def post(message):
     bot.send_message(CHANNEL_ID, text)
     bot.reply_to(message, "فرستادم 😎")
 
+bot.send_message(CHANNEL_ID, text)
+bot.reply_to(message, "😎 فرستادم")
+
+
+@bot.message_handler(commands=['id'])
+def myid(message):
+    bot.reply_to(message, str(message.chat.id))
+
+
 bot.infinity_polling()
